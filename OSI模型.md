@@ -58,11 +58,12 @@ MAC 位址，交換器在內部的高速緩衝記憶體中建立MAC 位址與埠
 同VLAN之間的通訊需要通過路由器來完成，另外為了實現不同的網段之間通訊也需要路由器進行互連。
 
 ```
-# 資料來源:
-
-
-
-
+資料來源:
+    https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B 
+    https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8
+    https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%BB%A7%E5%99%A8
+    https://zh.wikipedia.org/wiki/%E9%9B%86%E7%B7%9A%E5%99%A8
+    https://zh.wikipedia.org/wiki/%E7%B6%B2%E8%B7%AF%E4%BA%A4%E6%8F%9B%E5%99%A8#%E4%B8%83
 
 
 ```
