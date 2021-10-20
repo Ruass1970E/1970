@@ -21,7 +21,7 @@ OSI將電腦網路體系結構劃分為七層。`( 第1層為底部，第七層�
 |L6 表達層(Presentation Layer)|||
 |L5 會議層(Session Layer)|||
 |L4 傳輸層(Transport Layer)||L4-Switch交換器|
-|L3 網路層(Network Layer)|路由器 Router|L3-Switch交換器|
+|L3 網路層(Network Layer)|[路由器 Router](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#%E8%B7%AF%E7%94%B1%E5%99%A8router)|L3-Switch交換器|
 |L2 資料連結層(Data Link Layer)||L2-Switch交換器|
 |L1 實體層(Physical Layer)|中繼器 Repeater|集線器 HUB|
 ## [路由器(Router)](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8)
