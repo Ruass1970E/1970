@@ -17,12 +17,12 @@ OSI將電腦網路體系結構劃分為七層。`( 第1層為底部，第七層�
 ![image](https://user-images.githubusercontent.com/91179289/138015084-101929eb-40ff-4ee2-a5e7-92b613cd7892.png)
 |OSI model|||
 |-|-|-|
-|L7 應用層(Application Layer)||L7-Switch交換器|
+|L7 應用層(Application Layer)||[L7-Switch交換器](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#l7-switch)|
 |L6 表達層(Presentation Layer)|||
 |L5 會議層(Session Layer)|||
-|L4 傳輸層(Transport Layer)||L4-Switch交換器|
-|L3 網路層(Network Layer)|[路由器 Router](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#%E8%B7%AF%E7%94%B1%E5%99%A8router)|L3-Switch交換器|
-|L2 資料連結層(Data Link Layer)||L2-Switch交換器|
+|L4 傳輸層(Transport Layer)||[L4-Switch交換器](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#l4-switch)|
+|L3 網路層(Network Layer)|[路由器 Router](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#%E8%B7%AF%E7%94%B1%E5%99%A8router)|[L3-Switch交換器](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#l3-switch)|
+|L2 資料連結層(Data Link Layer)||[L2-Switch交換器](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#l2-switch)|
 |L1 實體層(Physical Layer)|[中繼器 Repeater](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#%E4%B8%AD%E7%B9%BC%E5%99%A8repeater)|[集線器 HUB](https://github.com/Ruass1970E/4100E022/blob/main/OSI%E6%A8%A1%E5%9E%8B.md#%E9%9B%86%E7%B7%9A%E5%99%A8hub)|
 ## [路由器(Router)](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8)
 指一種電訊網路裝置，提供路由與轉送兩種重要機制，
