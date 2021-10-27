@@ -63,7 +63,7 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 ### 個人區域網路（personal area network, PAN）
 ### 個人區域網路（personal area network, PAN）
 ### [VPN(必考題)]()
-### `inter`et. `intra`net, `extra`net
+### `inter`net. `intra`net, `extra`net
 ### 惡意軟體（malware）
 ### 網路釣魚（phishing）
 ### 社交工程（social engineering）
