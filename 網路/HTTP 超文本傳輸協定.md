@@ -1,12 +1,16 @@
-- [超文本傳輸協定](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
-- [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+# [超文本傳輸協定](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
+## 相關連結
+- 超文本傳輸協定 \
+https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE
+- Hypertext Transfer Protocol \
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 
 
 
 
 
 
-# [請求方法](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE#%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95)
+## [請求方法](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE#%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95)
 |方法 | 說明 |
 |-|-|
 |`GET`|讀取指定的資料。|
@@ -18,18 +22,16 @@
 |`OPTIONS`|這個方法可使伺服器傳回該資源所支援的所有HTTP請求方法可以測試伺服器功能是否正常運作。|
 |`CONNECT`|HTTP/1.1協定中預留給能夠將連接改為隧道方式的代理伺服器。|
 |`PATCH`|用於將局部修改應用到資源。|
-#  [狀態碼](https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81)
+##  [狀態碼](https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81)
 
-https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
-
-## `100 訊息`
+### `100 訊息`
 |類別|描述|內容|
 |-|-|-|
 |100|Continue|伺服器已經接收到請求頭，並且客戶端應繼續傳送請求主體，或者如果請求已經完成，忽略這個回應。|
 |101|Switching Protocols|伺服器已經理解了客戶端的請求，並將通過Upgrade訊息頭通知客戶端採用不同的協定來完成這個請求。|
 |102|Processing|WebDAV請求可能包含許多涉及檔案操作的子請求，需要很長時間才能完成請求。該代碼表示伺服器已經收到並正在處理請求，但無回應可用。|
 |103|Early Hints|用來在最終的HTTP訊息之前返回一些回應頭。|
-## `200 成功`
+### `200 成功`
 |類別|描述|內容|
 |-|-|-|
 |200|OK|請求已成功，請求所希望的回應頭或資料體將隨此回應返回。|
@@ -42,7 +44,7 @@ https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
 |207|Multi-Status|代表之後的訊息體將是一個XML訊息，並且可能依照之前子請求數量的不同，包含一系列獨立的回應代碼。|
 |208|Already Reported|DAV繫結的成員已經在（多狀態）回應之前的部分被列舉，且未被再次包含。|
 |226|IM Used|伺服器已經滿足了對資源的請求，對實體請求的一個或多個實體操作的結果表示。|
-## `300 重新導向`
+### `300 重新導向`
 |類別|描述|內容|
 |-|-|-|
 |300|Multiple Choices|被請求的資源有一系列可供選擇的回饋資訊，每個都有自己特定的位址和瀏覽器驅動的商議資訊。使用者或瀏覽器能夠自行選擇一個首選的位址進行重新導向。|
@@ -54,7 +56,7 @@ https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
 |306|Switch Proxy|在最新版的規範中，306狀態碼已經不再被使用。最初是指「後續請求應使用指定的代理」。|
 |307|Temporary Redirect|在這種情況下，請求應該與另一個URI重複，但後續的請求應仍使用原始的URI。 與302相反，當重新發出原始請求時，不允許更改請求方法。|
 |308|Permanent Redirect|請求和所有將來的請求應該使用另一個URI重複。 307和308重複302和301的行為，但不允許HTTP方法更改。 |
-## `400 客戶端錯誤`
+### `400 客戶端錯誤`
 |類別|描述|內容|
 |-|-|-|
 |400|Bad Request|由於明顯的客戶端錯誤（例如，格式錯誤的請求語法，太大的大小，無效的請求訊息或欺騙性路由請求），伺服器不能或不會處理該請求。|
@@ -87,7 +89,7 @@ https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
 |431|Request Header Fields Too Large|伺服器不願處理請求，因為一個或多個頭欄位過大。|
 |440|Login Time-out|客戶端session逾時失效，需要重新登入。|
 |451|Unavailable For Legal Reasons|該存取因法律的要求而被拒絕，由IETF在2015核准後新增加。|
-## `500 伺服器錯誤`
+### `500 伺服器錯誤`
 |類別|描述|內容|
 |-|-|-|
 |500|Internal Server Error|通用錯誤訊息，伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。沒有給出具體錯誤資訊。|
@@ -102,10 +104,11 @@ https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
 |510|Not Extended|取得資源所需要的策略並沒有被滿足。|
 |511|Network Authentication Required|客戶端需要進行身分驗證才能獲得網路存取權限，旨在限制使用者群存取特定網路。|
 
-
-
-
-
+```
+資料來源
+  https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
+  https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE
+```
 
 
 
