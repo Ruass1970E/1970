@@ -25,82 +25,82 @@ https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
 ## `100 訊息`
 |類別|描述|內容|
 |-|-|-|
-|100|||
-|101|||
-|102|||
-|103|||
+|100|Continue|伺服器已經接收到請求頭，並且客戶端應繼續傳送請求主體，或者如果請求已經完成，忽略這個回應。|
+|101|Switching Protocols|伺服器已經理解了客戶端的請求，並將通過Upgrade訊息頭通知客戶端採用不同的協定來完成這個請求。|
+|102|Processing|WebDAV請求可能包含許多涉及檔案操作的子請求，需要很長時間才能完成請求。該代碼表示伺服器已經收到並正在處理請求，但無回應可用。|
+|103|Early Hints|用來在最終的HTTP訊息之前返回一些回應頭。|
 ## `200 成功`
 |類別|描述|內容|
 |-|-|-|
 |200|OK|請求已成功，請求所希望的回應頭或資料體將隨此回應返回。|
-|201|Created||
-|202|Accepted||
-|203|Non-Authoritative Information||
-|204|No Content||
-|205|Reset Content||
-|206|Partial Content||
-|207|Multi-Status||
-|208|Already Reported||
-|226|IM Used||
+|201|Created|請求已經被實現，而且有一個新的資源已經依據請求的需要而建立，且其URI已經隨Location頭資訊返回。假如需要的資源無法及時建立的話，應當返回'202 Accepted'。|
+|202|Accepted|伺服器已接受請求，但尚未處理。最終該請求可能會也可能不會被執行，並且可能在處理發生時被禁止。|
+|203|Non-Authoritative Information|伺服器是一個轉換代理伺服器，以'200 OK'狀態碼為起源，但回應了原始回應的修改版本。|
+|204|No Content|伺服器成功處理了請求，沒有返回任何內容。|
+|205|Reset Content|伺服器成功處理了請求，但沒有返回任何內容。與204回應不同，此回應要求請求者重設文件視圖。|
+|206|Partial Content|伺服器已經成功處理了部分GET請求。類似於FlashGet或者迅雷這類的HTTP下載工具都是使用此類回應實現斷點續傳或者將一個大文件分解為多個下載段同時下載。|
+|207|Multi-Status|代表之後的訊息體將是一個XML訊息，並且可能依照之前子請求數量的不同，包含一系列獨立的回應代碼。|
+|208|Already Reported|DAV繫結的成員已經在（多狀態）回應之前的部分被列舉，且未被再次包含。|
+|226|IM Used|伺服器已經滿足了對資源的請求，對實體請求的一個或多個實體操作的結果表示。|
 ## `300 重新導向`
 |類別|描述|內容|
 |-|-|-|
-|300|Multiple Choices||
-|301|Moved Permanently||
-|302|Found||
-|303|See Other||
-|304|Not Modified||
-|305|Use Proxy||
-|306|Switch Proxy||
-|307|Temporary Redirect||
-|308|Permanent Redirect||
+|300|Multiple Choices|被請求的資源有一系列可供選擇的回饋資訊，每個都有自己特定的位址和瀏覽器驅動的商議資訊。使用者或瀏覽器能夠自行選擇一個首選的位址進行重新導向。|
+|301|Moved Permanently|被請求的資源已永久移動到新位置，並且將來任何對此資源的參照都應該使用本回應返回的若干個URI之一。|
+|302|Found|要求客戶端執行臨時重新導向。由於這樣的重新導向是臨時的，客戶端應當繼續向原有位址傳送以後的請求。|
+|303|See Other|對應當前請求的回應可以在另一個URI上被找到，當回應於POST（或PUT / DELETE）接收到回應時，客戶端應該假定伺服器已經收到資料，並且應該使用單獨的GET訊息發出重新導向。|
+|304|Not Modified|表示資源在由請求頭中的If-Modified-Since或If-None-Match參數指定的這一版本之後，未曾被修改。在這種情況下，由於客戶端仍然具有以前下載的副本，因此不需要重新傳輸資源。|
+|305|Use Proxy|被請求的資源必須通過指定的代理才能被存取。Location域中將給出指定的代理所在的URI資訊，接收者需要重複傳送一個單獨的請求，通過這個代理才能存取相應資源。只有原始伺服器才能建立305回應。|
+|306|Switch Proxy|在最新版的規範中，306狀態碼已經不再被使用。最初是指「後續請求應使用指定的代理」。|
+|307|Temporary Redirect|在這種情況下，請求應該與另一個URI重複，但後續的請求應仍使用原始的URI。 與302相反，當重新發出原始請求時，不允許更改請求方法。|
+|308|Permanent Redirect|請求和所有將來的請求應該使用另一個URI重複。 307和308重複302和301的行為，但不允許HTTP方法更改。 |
 ## `400 客戶端錯誤`
 |類別|描述|內容|
 |-|-|-|
-|400|Bad Request||
-|401|Unauthorized||
-|402|Payment Required||
-|403|Forbidden||
-|404|Not Found||
-|405|Method Not Allowed||
-|406|Not Acceptable||
-|407|Proxy Authentication Required||
-|408|Request Timeout||
-|409|Conflict||
-|410|Gone||
-|411|Length Required||
-|412|Precondition Failed||
-|413|Request Entity Too Large||
-|414|Request-URI Too Long||
-|415|Unsupported Media Type||
-|416|Requested Range Not Satisfiable||
-|417|Expectation Failed||
-|418|I'm a teapot||
-|421|Misdirected Request||
-|422|Unprocessable Entity||
-|423|Locked||
-|424|Failed Dependency||
-|425|Too Early||
-|426|Upgrade Required||
-|428|Precondition Required||
-|429|Too Many Requests||
-|431|Request Header Fields Too Large||
-|440|Login Time-out||
-|451|Unavailable For Legal Reasons||
+|400|Bad Request|由於明顯的客戶端錯誤（例如，格式錯誤的請求語法，太大的大小，無效的請求訊息或欺騙性路由請求），伺服器不能或不會處理該請求。|
+|401|Unauthorized|類似於'403 Forbidden'，401語意即「未認證」，即使用者沒有必要的憑據。該狀態碼表示當前請求需要使用者驗證。該回應必須包含一個適用於被請求資源的WWW-Authenticate資訊頭用以詢問使用者資訊。|
+|402|Payment Required|該狀態碼是為了將來可能的需求而預留的。該狀態碼最初的意圖可能被用作某種形式的數字現金或線上支付方案的一部分，但幾乎沒有哪家服務商使用，而且這個狀態碼通常不被使用。|
+|403|Forbidden|伺服器已經理解請求，但是拒絕執行它。與401回應不同的是，身分驗證並不能提供任何幫助，而且這個請求也不應該被重複提交。|
+|404|Not Found|請求失敗，請求所希望得到的資源未被在伺服器上發現，但允許使用者的後續請求。沒有資訊能夠告訴使用者這個狀況到底是暫時的還是永久的。|
+|405|Method Not Allowed|請求行中指定的請求方法不能被用於請求相應的資源。該回應必須返回一個Allow頭資訊用以表示出當前資源能夠接受的請求方法的列表。|
+|406|Not Acceptable|請求的資源的內容特性無法滿足請求頭中的條件，因而無法生成回應實體，該請求不可接受。|
+|407|Proxy Authentication Required|與401回應類似，只不過客戶端必須在代理伺服器上進行身分驗證。|
+|408|Request Timeout|請求逾時。根據HTTP規範，客戶端沒有在伺服器預備等待的時間內完成一個請求的傳送，客戶端可以隨時再次提交這一請求而無需進行任何更改。|
+|409|Conflict|表示因為請求存在衝突無法處理該請求。|
+|410|Gone|表示所請求的資源不再可用。當資源被有意地刪除並且資源應被清除時，應該使用這個。在收到410狀態碼後，使用者應停止再次請求資源，但大多數伺服器端不會使用此狀態碼，而是直接使用404狀態碼。|
+|411|Length Required|伺服器拒絕在沒有定義Content-Length頭的情況下接受請求。在添加了表明請求訊息體長度的有效Content-Length頭之後，客戶端可以再次提交該請求。|
+|412|Precondition Failed|伺服器在驗證在請求的頭欄位中給出先決條件時，沒能滿足其中的一個或多個。|
+|413|Request Entity Too Large|表示伺服器拒絕處理當前請求，因為該請求提交的實體資料大小超過了伺服器願意或者能夠處理的範圍。此種情況下，伺服器可以關閉連接以免客戶端繼續傳送此請求。|
+|414|Request-URI Too Long|表示請求的URI長度超過了伺服器能夠解釋的長度，因此伺服器拒絕對該請求提供服務。|
+|415|Unsupported Media Type|對於當前請求的方法和所請求的資源，請求中提交的網際網路媒體類型並不是伺服器中所支援的格式，因此請求被拒絕。|
+|416|Requested Range Not Satisfiable|客戶端已經要求檔案的一部分（Byte serving），但伺服器不能提供該部分。|
+|417|Expectation Failed|在請求頭Expect中指定的預期內容無法被伺服器滿足，或者這個伺服器是一個代理服顯的證據證明在當前路由的下一個節點上，Expect的內容無法被滿足。|
+|418|I'm a teapot|本操作碼是在1998年作為IETF的傳統愚人節笑話, 在RFC 2324超文字咖啡壺控制協定'中定義的，並不需要在真實的HTTP伺服器中定義。|
+|421|Misdirected Request|該請求針對的是無法產生回應的伺服器。|
+|422|Unprocessable Entity|請求格式正確，但是由於含有語意錯誤，無法回應。|
+|423|Locked|當前資源被鎖定。|
+|424|Failed Dependency|由於之前的某個請求發生的錯誤，導致當前請求失敗，|
+|425|Too Early|伺服器拒絕處理在Early Data中的請求，以規避可能的重放攻擊。|
+|426|Upgrade Required|客戶端應切換到Upgrade頭欄位中給出的不同協定，如TLS/1.0。|
+|428|Precondition Required|原伺服器要求該請求滿足一定條件。這是為了防止「未更新」問題，即客戶端讀取（GET）一個資源的狀態，更改它，並將它寫（PUT）回伺服器，但這期間第三方已經在伺服器上更改了該資源的狀態，因此導致了衝突。」|
+|429|Too Many Requests|使用者在給定的時間內傳送了太多的請求。旨在用於網路限速。|
+|431|Request Header Fields Too Large|伺服器不願處理請求，因為一個或多個頭欄位過大。|
+|440|Login Time-out|客戶端session逾時失效，需要重新登入。|
+|451|Unavailable For Legal Reasons|該存取因法律的要求而被拒絕，由IETF在2015核准後新增加。|
 ## `500 伺服器錯誤`
 |類別|描述|內容|
 |-|-|-|
-|500|||
-|501|||
-|502|||
-|503|||
-|504|||
-|505|||
-|506|||
-|507|||
-|508|||
-|510|||
-|511|||
+|500|Internal Server Error|通用錯誤訊息，伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。沒有給出具體錯誤資訊。|
+|501|Not Implemented|伺服器不支援當前請求所需要的某個功能。當伺服器無法辨識請求的方法，並且無法支援其對任何資源的請求。|
+|502|Bad Gateway|作為閘道器或者代理工作的伺服器嘗試執行請求時，從上游伺服器接收到無效的回應。|
+|503|Service Unavailable|由於臨時的伺服器維護或者過載，伺服器當前無法處理請求。這個狀況是暫時的，並且將在一段時間以後恢復。|
+|504|Gateway Timeout|作為閘道器或者代理工作的伺服器嘗試執行請求時，未能及時從上游伺服器或者輔助伺服器收到回應。|
+|505|HTTP Version Not Supported|伺服器不支援，或者拒絕支援在請求中使用的HTTP版本。|
+|506|Variant Also Negotiates|由《透明內容協商協定》（RFC 2295）擴充，代表伺服器存在內部組態錯誤，被請求的協商變元資源被組態為在透明內容協商中使用自己，因此在一個協商處理中不是一個合適的重點。|
+|507|Insufficient Storage|伺服器無法儲存完成請求所必須的內容。這個狀況被認為是臨時的。|
+|508|Loop Detected|伺服器在處理請求時陷入無窮迴圈。|
+|510|Not Extended|取得資源所需要的策略並沒有被滿足。|
+|511|Network Authentication Required|客戶端需要進行身分驗證才能獲得網路存取權限，旨在限制使用者群存取特定網路。|
 
 
 
