@@ -1,7 +1,7 @@
 # 期中考
 ## 1.觀念題與簡答題
 ## 期中考範例題目[作業系統與檔案管理][教科書第4章110-134:重要名詞與觀念]
-- 系統軟體（system software）  vs appliation software(應用軟體) (必考題)
+- [系統軟體（system software）  vs appliation software(應用軟體) (必考題)]()
 - 作業系統（operating system, OS）
 - 圖形化使用者介面（graphical user interface, GUI）
 - 公用程式（utility）
@@ -17,7 +17,7 @@
 
 ### 作業系統（operating system, OS）的功能: 記憶體管理
 - 記憶體（memory）
-- 記憶體階層(memory hierarchy)
+- [記憶體階層(memory hierarchy)(必考題)]()
 - 虛擬記憶體（virtual memory）
 - 
 - `揮發性`記憶體（`volatile` memory） vs `非揮發性`記憶體（`nonvolatile` memory）
@@ -89,8 +89,8 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 殭屍（zombie）電腦
 - 雙面惡魔evil twin | fake ap |  rogue ap
 - [驗證（authentication）(必考題)]() 
-- 強式密碼（strong password）   @KsU093728384!
-- 防火牆（firewall） ==> 硬體防火牆   軟體防火牆
+- 強式密碼（strong password）   例:@KsU093728384!
+- 防火牆（firewall）(硬體防火牆、軟體防火牆)
 - 網路附接儲存體（network attached storage, NAS）
 - 加密（encryption）
 - 網路標準（network standard）
@@ -120,9 +120,9 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 討論區網路（discussion forum network
 - 社群書籤（social bookmarking） 
 - 社群典藏（social curation）
-- 網路禮節（netiquette）(必考題)
+- [網路禮節（netiquette）(必考題)]()
 - `群眾`外包（`crowd`sourcing）  vs 外包(`out`sourcing）  
-- `群眾`集資（`crowd`funding） ==> http://iiic.niu.edu.tw/actnews/intro.php?Sn=13&OSn=42
+- `群眾`集資（`crowd`funding）
 - 科技上癮（technology addiction）
 - 科技過載（technology overload）
 - 網路霸凌（cyber`bullying`）
