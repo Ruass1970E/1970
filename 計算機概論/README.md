@@ -1,7 +1,7 @@
-# 期中考
+# 期中考(選擇35題，簡答15題)
 ## 1.觀念題與簡答題
 ## 期中考範例題目[作業系統與檔案管理][教科書第4章110-134:重要名詞與觀念]
-- [系統軟體（system software）  vs appliation software(應用軟體) (必考題)]()
+- [系統軟體（system software）  vs appliation software(應用軟體) (必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#%E7%B3%BB%E7%B5%B1%E8%BB%9F%E9%AB%94)
 - 作業系統（operating system, OS）
 - 圖形化使用者介面（graphical user interface, GUI）
 - 公用程式（utility）
@@ -17,7 +17,7 @@
 
 ### 作業系統（operating system, OS）的功能: 記憶體管理
 - 記憶體（memory）
-- [記憶體階層(memory hierarchy)(必考題)]()
+- [記憶體階層(memory hierarchy)(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#%E8%A8%98%E6%86%B6%E9%AB%94%E9%9A%8E%E5%B1%A4)
 - 虛擬記憶體（virtual memory）
 - 
 - `揮發性`記憶體（`volatile` memory） vs `非揮發性`記憶體（`nonvolatile` memory）
@@ -79,7 +79,7 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 都會區域網路（metropolitan area network, MAN）
 - 個人區域網路（personal area network, PAN）
 - 個人區域網路（personal area network, PAN）
-- [VPN(必考題)]()
+- [VPN(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#vpn)
 - `inter`net. `intra`net, `extra`net
 - 惡意軟體（malware）
 - 網路釣魚（phishing）
@@ -88,18 +88,18 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 分散式阻斷服務攻擊（distributed denial of service attack）| DDoS 攻擊（DDoS attack） 
 - 殭屍（zombie）電腦
 - 雙面惡魔evil twin | fake ap |  rogue ap
-- [驗證（authentication）(必考題)]() 
+- [驗證（authentication）(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#%E9%A9%97%E8%AD%89-authentication) 
 - 強式密碼（strong password）   例:@KsU093728384!
 - 防火牆（firewall）(硬體防火牆、軟體防火牆)
 - 網路附接儲存體（network attached storage, NAS）
 - 加密（encryption）
 - 網路標準（network standard）
-- [Ethernet(必考題)]()
+- [Ethernet(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#ethernet)
 - 協定（protocol）
 - Transmission Control Protocol/Internet Protocol（傳輸控制協定／網際網路協定） 
-- [NFC(必考題)]()
+- [NFC(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#nfc)
 - RFID
-- [蜂巢式網路（cellular network）(必考題)]()
+- [蜂巢式網路（cellular network）(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#%E8%9C%82%E5%B7%A2%E5%BC%8F%E7%B6%B2%E8%B7%AF-cellular-network)
 - Wi-Fi 熱點(hopspot)
 - 路由器韌體firmware
 - 硬體(hardware)|軟體(software)|韌體(firmware)
@@ -120,7 +120,7 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 討論區網路（discussion forum network
 - 社群書籤（social bookmarking） 
 - 社群典藏（social curation）
-- [網路禮節（netiquette）(必考題)]()
+- [網路禮節（netiquette）(必考題)](https://github.com/Ruass1970E/1A022/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/%E6%9C%9F%E4%B8%AD%E8%80%83%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B.md#%E7%B6%B2%E8%B7%AF%E7%A6%AE%E7%AF%80-netiquette)
 - `群眾`外包（`crowd`sourcing）  vs 外包(`out`sourcing）  
 - `群眾`集資（`crowd`funding）
 - 科技上癮（technology addiction）
