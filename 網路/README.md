@@ -1,5 +1,5 @@
 # 期中考
-## 1.範例題目
+## 1.觀念題與簡答題
 ## 期中考範例題目[作業系統與檔案管理][教科書第4章110-134:重要名詞與觀念]
 - 系統軟體（system software）  vs appliation software(應用軟體) (必考題)
 - 作業系統（operating system, OS）
