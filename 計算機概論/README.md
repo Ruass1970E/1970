@@ -127,7 +127,7 @@ https://github.com/s109000542/photo/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83.md
 - 科技過載（technology overload）
 - 網路霸凌（cyber`bullying`）
 - 網路跟蹤（cyber`stalking`）
-- emoji(必考題)
+- [emoji(必考題)]()
 - 謾罵論戰（flaming）
 - 同好社群網站（interest-based network
 - 電子郵件位址（email address）
